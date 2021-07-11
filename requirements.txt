@@ -1,0 +1,7 @@
+opencv-python
+pywin32
+pydirectinput
+pillow
+d3dshot
+
+
