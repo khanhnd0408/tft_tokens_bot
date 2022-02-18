@@ -1,7 +1,5 @@
-opencv-python
-pywin32
-pydirectinput
-pillow
-d3dshot
-
-
+opencv-python==4.5.5.62
+pywin32==303
+pydirectinput==1.0.4
+pillow>=7.1.2,<7.2.0
+d3dshot==0.1.5
