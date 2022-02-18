@@ -5,12 +5,12 @@ import d3dshot
 d = d3dshot.create(capture_output="numpy")
 import pydirectinput
 
-def takeScreenShot_v2(ROI):
+def take_screenshot_v2(ROI):
     img = d.screenshot(ROI)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     return img
 
-def takeScreenShot(ROI):
+def take_screenshot(ROI):
     img = pyautogui.screenshot(region=ROI)
     img = np.asarray(img)
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -26,7 +26,7 @@ if __name__ == "__main__":
     ]
     from time import sleep
     sleep(5)
-    img = takeScreenShot((0,0,1920,1080))
+    img = take_screenshot((0,0,1920,1080))
     # cv2.imshow("IMG", img)
     # key = cv2.waitKey(0)
     # if key == "s":
